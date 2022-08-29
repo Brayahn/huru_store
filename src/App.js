@@ -5,6 +5,11 @@ function App() {
     //BEM
     <div className="app">
       <h1>Huru Store</h1>
+
+{/*Header */}
+
+{/* Home*/}
+
     </div>
   );
 }
