@@ -2,7 +2,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    //BEM
+    <div className="app">
       <h1>Huru Store</h1>
     </div>
   );
