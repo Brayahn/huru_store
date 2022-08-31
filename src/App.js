@@ -5,7 +5,7 @@ function App() {
   return (
     //BEM
     <div className="app">
-      <h1>Huru Store</h1>
+      
 
 {/*Header */}
   <Header/>
