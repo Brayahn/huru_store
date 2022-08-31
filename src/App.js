@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <h1>Huru Store</h1>
 
 {/*Header */}
+  <Header/>
 
 {/* Home*/}
 
