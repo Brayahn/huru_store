@@ -33,7 +33,11 @@ function Header() {
             <span className='header_optionLineTwo'> Prime </span>
         </div>
 
-        <div className='header_optionBasket'> </div>
+        <div className='header_optionBasket'>
+            <ShoppingBasketIcon className='shopping_basket'/>
+            <span className='header_optionLineTwo header_basketCount'>0</span>
+         </div>
+
 
     </div>
 
