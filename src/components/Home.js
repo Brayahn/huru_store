@@ -8,17 +8,17 @@ const Home = () => {
         <div className='home__container'>
         <img  className='home_image' src = {Backg} alt='Huru Store'/>
 
-        <div className='home_row'>
+                <div className='home_row'>
+                        
+                </div>
 
-        </div>
+                <div className='home_row'>
+                    
+                </div>
 
-        <div className='home_row'>
-            
-        </div>
-
-        <div className='home_row'>
-            
-        </div>
+                <div className='home_row'>
+                    
+                </div>
 
         </div>
     </div>
