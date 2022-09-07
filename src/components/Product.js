@@ -1,24 +1,21 @@
 import React from "react";
 import "./Product.css";
 
-const Product = () => {
+const Product = ({ title, image, price, rating }) => {
   return (
     <div className="product">
       <div className="product_info">
-        <p>iPhone 13 Mini</p>
+        <p>{title}</p>
         <p className="product_price">
           <small>ksh</small>
-          <strong>89000</strong>
+          <strong>{price}</strong>
         </p>
 
         <div className="product_rating">
-          <p>⭐️</p>
+          <p>{rating}</p>
         </div>
       </div>
-      <img
-        src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-13-mini-red-back.png?v=5"
-        alt="iphone"
-      />
+      <img src={image} alt="iphone" />
       <button>Add to Cart</button>
     </div>
   );
