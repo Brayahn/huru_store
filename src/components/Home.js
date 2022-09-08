@@ -2,13 +2,11 @@ import React from "react";
 import Backg from "./back.jpg";
 import "./Home.css";
 import Product from "./Product";
-import Header from "./Header";
 
 const Home = () => {
   return (
     <>
-      {" "}
-      <Header />
+      
       <div className="home">
         <div className="home__container">
           <img className="home_image" src={Backg} alt="Huru Store" />
