@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Subtotal.css";
 
 function Subtotal() {
-  return (
-    <div>Subtotal</div>
-  )
+  return <div className="subtotal">Subtotal</div>;
 }
 
-export default Subtotal
+export default Subtotal;
