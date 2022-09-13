@@ -6,7 +6,6 @@ import Product from "./Product";
 const Home = () => {
   return (
     <>
-      
       <div className="home">
         <div className="home__container">
           <img className="home_image" src={Backg} alt="Huru Store" />
@@ -18,13 +17,6 @@ const Home = () => {
               price={90000}
               image="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-13-mini-red-back.png?v=5"
               rating={5}
-            />
-
-            <Product
-              title={"JBL Boomox 2"}
-              price={65000}
-              image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71zzQ6KvA7L._AC_SL1200_.jpg"
-              rating={3}
             />
 
             <Product
@@ -64,6 +56,13 @@ const Home = () => {
               price={65000}
               image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71NBIhOKaSL._AC_SL1463_.jpg"
               rating={5}
+            />
+
+            <Product
+              title={"JBL Boomox 2"}
+              price={65000}
+              image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71zzQ6KvA7L._AC_SL1200_.jpg"
+              rating={3}
             />
           </div>
         </div>
