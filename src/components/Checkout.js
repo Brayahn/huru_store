@@ -1,4 +1,5 @@
 import React from "react";
+import "./Checkout.css";
 import backg from "./checkout_.jpg";
 import Subtotal from "./Subtotal";
 
@@ -10,10 +11,12 @@ function Checkout() {
 
         <div>
           <h2 className="checkout_title"> Your Shopping Basket</h2>
-          <Subtotal />
+          {/* Cart Items*/}
         </div>
       </div>
-      <div className="checkout_right">Subtotal goes here</div>
+      <div className="checkout_right">
+        <Subtotal />
+      </div>
     </div>
   );
 }

@@ -9,3 +9,24 @@
     border: 1px solid #dddddd;
     border-radius: 3px; 
 }
+
+
+.subtotal_gift{
+    display: flex;
+    align-items: center;
+}
+
+
+.subtotal_button{
+    background: #1d2724;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+    border: 0px solid;
+    margin-top: 10px;
+    border-color: #000000 #000000 #000000;
+    color: rgb(255, 255, 255);
+    overflow: visible;
+}
+
+
