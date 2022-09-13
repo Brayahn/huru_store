@@ -8,11 +8,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-  
-        <Link to="/">
-          <img className="header_logo" src={huru} alt="Huru Logo" />
-        </Link>
-      
+      <Link to="/">
+        <img className="header_logo" src={huru} alt="Huru Logo" />
+      </Link>
 
       <div className="header_search">
         <input className="header_searchInput" type="text" />
@@ -36,7 +34,9 @@ function Header() {
         </div>
 
         <div className="header_optionBasket">
-          <ShoppingBasketIcon className="shopping_basket" />
+          <Link to="/cart">
+            <ShoppingBasketIcon className="shopping_basket" />
+          </Link>
           <span className="header_optionLineTwo header_basketCount">0</span>
         </div>
       </div>
