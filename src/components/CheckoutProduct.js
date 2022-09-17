@@ -11,16 +11,15 @@ function CheckoutProduct({ id, image, title, price, rating }) {
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <p className="checkoutProductPrice">
+        <div className="checkout_Product_Rating">
           {Array(rating)
             .fill()
             .map((_i) => (
               <p>⭐️</p>
             ))}
-        </p>
+        </div>
+        <button>Clear from Cart</button>
       </div>
-
-      <button>Clear from Cart</button>
     </div>
   );
 }
