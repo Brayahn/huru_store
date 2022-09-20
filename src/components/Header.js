@@ -21,25 +21,28 @@ function Header() {
       </div>
 
       <div className="header_nav">
-        <div className="header_option">
-          <span className="header_optionLineOne"> Hello </span>
-          <span className="header_optionLineTwo"> Sign In </span>
-        </div>
-
+        <nav>
+          <Link to="login">
+            <div className="header_option">
+              <span className="header_optionLineOne"> Hello </span>
+              <span className="header_optionLineTwo"> Sign In </span>
+            </div>
+          </Link>
+        </nav>
         <div className="header_option">
           <span className="header_optionLineOne"> Returns </span>
           <span className="header_optionLineTwo"> Orders </span>
         </div>
-
         <div className="header_option">
           <span className="header_optionLineOne"> your </span>
           <span className="header_optionLineTwo"> Prime </span>
         </div>
-
         <div className="header_optionBasket">
-          <Link to="/cart" className="cart_link">
-            <ShoppingBasketIcon className="shopping_basket" />
-          </Link>
+          <nav>
+            <Link to="/cart" className="cart_link">
+              <ShoppingBasketIcon className="shopping_basket" />
+            </Link>
+          </nav>
           <span className="header_optionLineTwo header_basketCount">
             {basket?.length}
           </span>
