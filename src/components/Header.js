@@ -11,9 +11,11 @@ function Header() {
 
   return (
     <div className="header">
-      <Link to="/">
-        <img className="header_logo" src={huru} alt="Huru Logo" />
-      </Link>
+      <nav>
+        <Link to="/">
+          <img className="header_logo" src={huru} alt="Huru Logo" />
+        </Link>
+      </nav>
 
       <div className="header_search">
         <input className="header_searchInput" type="text" />
@@ -22,7 +24,7 @@ function Header() {
 
       <div className="header_nav">
         <nav>
-          <Link to="login">
+          <Link to="/login">
             <div className="header_option">
               <span className="header_optionLineOne"> Hello </span>
               <span className="header_optionLineTwo"> Sign In </span>
