@@ -1,5 +1,5 @@
 .login{
-    background-color: rgb(35, 28, 28);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,3 +15,58 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+
+.Login_Container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+
+.Login_Container > h1{
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.Login_Container > form > h5{
+    margin-bottom: 5px;
+}
+
+
+.Login_Container > form > input{
+   height: 30px;
+   margin-bottom: 10px;
+   background-color: white;
+   width: 98%
+}
+
+.Login_Container > p{
+    margin: 15px;
+    font-size: 12px;
+}
+
+
+ .Login_SignIn_Button{
+    background: #1d2724;
+    border: 0px solid;
+    margin-top: 10px;
+    border-color: #000000 #000000 #000000;
+    color: rgb(255, 255, 255);
+    overflow: visible;
+    
+ }
+
+ .Login_RegisterButton{
+    background: #1d2724;
+    border: 0px solid;
+    margin-top: 10px;
+    border-color: #000000 #000000 #000000;
+    color: rgb(255, 255, 255);
+    overflow: visible;
+    
+ }
