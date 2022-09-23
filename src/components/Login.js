@@ -6,7 +6,13 @@ import { Link } from "react-router-dom";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const signIn = (e) => {
+    e.preventDefault();
+  };
+const  register  = e=> {
+    e.preventDefault();
+    
+}
   return (
     <div className="login">
       <nav>
@@ -30,13 +36,17 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="Login_SignIn_Button">Sign In</button>
+          <button className="Login_SignIn_Button" onClick={signIn}>
+            Sign In
+          </button>
         </form>
         <p>
           By signing in you agree to Huru's Conditions of Use and Sale. Please
           see our Privacy Notice, our Cookies Notice and our Interest-Based Ads
         </p>
-        <button className="Login_RegisterButton">Create a Huru Account</button>
+        <button onClick={register} className="Login_RegisterButton">
+          Create a Huru Account
+        </button>
       </div>
     </div>
   );
