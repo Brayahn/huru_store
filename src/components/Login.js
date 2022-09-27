@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import huru from "./huru.png";
 import { Link } from "react-router-dom";
+import { auth } from "../firebase";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -9,10 +10,16 @@ export default function Login() {
   const signIn = (e) => {
     e.preventDefault();
   };
-const  register  = e=> {
+  const register = (e) => {
     e.preventDefault();
-    
-}
+
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        console.log(auth);
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <div className="login">
       <nav>
