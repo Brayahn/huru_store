@@ -10,6 +10,13 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const signIn = (e) => {
     e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        navigate("/");
+      })
+      .catch((error) => alert(error.message));
   };
   const register = (e) => {
     e.preventDefault();
