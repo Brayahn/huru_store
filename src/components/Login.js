@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
-import huru from "./huru.png";
-import { Link } from "react-router-dom";
+import huru from "./huru2.png";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 
 export default function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const signIn = (e) => {
@@ -16,7 +17,11 @@ export default function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
+        //successfully created a  new user with email and password
         console.log(auth);
+        if (auth) {
+          navigate("/");
+        }
       })
       .catch((error) => alert(error.message));
   };
