@@ -15,7 +15,7 @@ function Header() {
       auth.signOut();
     }
   };
-
+  var username_ = user?.email.substring(0, user?.email.lastIndexOf("@"));
   return (
     <div className="header">
       <nav>
@@ -33,7 +33,9 @@ function Header() {
         <nav>
           <Link to={!user && "/login"}>
             <div onClick={handleAuthentication} className="header_option">
-              <span className="header_optionLineOne"> Hello Stranger</span>
+              <span className="header_optionLineOne">
+                Hello {user ? username_ : "Stranger"}
+              </span>
               <span className="header_optionLineTwo">
                 {user ? "Sign Out" : "Sign In"}
               </span>

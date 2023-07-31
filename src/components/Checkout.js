@@ -8,7 +8,7 @@ import Subtotal from "./Subtotal";
 import Header from "./Header";
 
 function Checkout() {
-  const [{ basket }, action] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <>
@@ -18,6 +18,7 @@ function Checkout() {
           <img className="checkout_Ad" src={backg} alt="checkout_ad" />
 
           <div>
+            <h3> Hello, {user?.email}</h3>
             <h2 className="checkout_title"> Your Shopping Basket</h2>
             {basket.map((item) => (
               <CheckoutProduct
